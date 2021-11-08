@@ -19,9 +19,9 @@ router.get('/:id', (req, res) => {
 
 // GET /api/posts => [newPost, ...posts]
 router.post('/', (req, res) => {
-  const {topic, text} = req.body
-  posts.push({id: new Date.getTime().toString(), topic, text})
-  res.json({status: 'success'})
+  const {topic, text} = req.body;
+  posts.push({ id: new Date().getTime().toString(), topic, text });
+  res.json({status: 'success'});
 })
 
 router.put('/:id', (req, res) => {
