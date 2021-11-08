@@ -8,7 +8,7 @@ const posts = [
 
 // GET /api/posts => [...posts]
 router.get('/', (req, res) => {
-   res.json({posts, status: 'success'}) 
+   res.json({posts, status: 'succesdds'}) 
 })
 
 // GET /api/posts/<123> => {post with id 123}
